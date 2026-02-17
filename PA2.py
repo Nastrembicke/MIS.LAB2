@@ -121,7 +121,14 @@ def transaction_calculator():
         change = amount_paid - total_due
         print(f"Payment Accepted. Change due: ${change:.2f}\n")
 
-
+def show_prices():
+    print("\n--- Prices and Rates ---")
+    print(f"Specialty Cold Brew: ${Cold_Brew_Price:.2f}")
+    print(f"Standard Drip: ${Drip_Price:.2f}")
+    print(f"Pastry Bundle: ${Pastry_Bundle_Price:.2f}")
+    print(f"Bulk Discount: {Bulk_Discount_Rate * 100:.0f}% (qty >= 10)")
+    print(f"Tax Rate: {Tax_Rate * 100: .0f}%\n")
+    
 def main():
     while True:
         print("=== Katelyns C(offee) - PA2 ===")
